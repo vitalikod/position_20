@@ -63,6 +63,14 @@ a {
   right: 30px;
 }
 
+@media screen and (max-width: 700px) {
+  .content .button .content .button {
+    height: 150px;
+    width: 300px;
+    color: black;
+  }
+}
+
 .content .button:hover {
   color: blue;
 }
