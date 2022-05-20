@@ -1,0 +1,69 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  background-image: url(../img/img11.jpg);
+  background-repeat: no-repeat;
+  max-width: 1367px;
+  height: 543px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.content .title {
+  width: 500px;
+  height: 410px;
+  margin-left: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .title .subtitle {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: calc(38 / 32 * 100%);
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.content .button {
+  height: 50px;
+  width: 160px;
+  background-color: #EF3A53;
+  border-radius: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+.content .button:hover {
+  color: blue;
+}
+/*# sourceMappingURL=main.css.map */
