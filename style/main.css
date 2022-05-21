@@ -10,7 +10,7 @@ a {
   background-image: url(../img/img11.jpg);
   background-repeat: no-repeat;
   max-width: 1367px;
-  height: 543px;
+  min-height: 543px;
   margin: 0 auto;
   position: relative;
 }
@@ -40,6 +40,10 @@ a {
   line-height: calc(38 / 32 * 100%);
   color: #ffffff;
   text-transform: uppercase;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid white;
+  border-radius: 6px;
 }
 
 .content .button {
@@ -63,15 +67,30 @@ a {
   right: 30px;
 }
 
-@media screen and (max-width: 700px) {
-  .content .button .content .button {
-    height: 150px;
-    width: 300px;
-    color: black;
+.content .button:hover {
+  color: blue;
+}
+
+@media screen and (max-width: 800px) {
+  .content .button {
+    height: 70px;
+    width: 220px;
+  }
+  .content .title {
+    margin-left: 160px;
   }
 }
 
-.content .button:hover {
-  color: blue;
+@media screen and (max-width: 578px) {
+  .content .button {
+    height: 70px;
+    width: 578px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .content .title {
+    margin-left: 33px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
