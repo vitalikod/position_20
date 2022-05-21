@@ -8,9 +8,10 @@ a {
     background-image: url(../img/img11.jpg);
     background-repeat: no-repeat;
     max-width: 1367px;
-    min-height: 543px;
+    height: 543px;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
 
     .title {
         width: 500px;
@@ -51,25 +52,46 @@ a {
     }
 }
 @media screen and (max-width: 800px) {
-    .content .button {
-        height: 70px;
-        width: 220px;
+    .content {
+        background-image: 800px;
+        height: auto;
+        overflow: hidden;
     }
 
-    .content .title {
-        margin-left: 160px;
-    }
-}
-@media screen and (max-width: 578px) {
     .content .button {
         height: 70px;
-        width: 578px;
+        width: 100%;
         position: absolute;
         bottom: 0;
         left: 0;
     }
-
     .content .title {
-        margin-left: 33px;
+        padding-bottom: 80px;
+        margin: 0 auto;
+    }
+    .content .title .subtitle {
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 578px) {
+    .content {
+        background-image: 578px;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .content .button {
+        height: 70px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .content .title {
+        padding-bottom: 80px;
+        margin: 0 auto;
+    }
+    .content .title .subtitle {
+        font-size: 22px;
     }
 }
